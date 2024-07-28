@@ -15,7 +15,7 @@ How to:
 6. python3 -m pip install PyQt6  or  pip install PyQt6
 7. pip install PySide6   -- in case you need to use it only
 
-Should you encounter any bugs or issues, please do not hesitate to contact me via email at: ben.sh@tohoku.ac.jp or ben.sh@my.cityu.edu.hk
+Should you encounter any bugs or issues, please do not hesitate to contact me via email.
 
 enjoy!
 20240725
