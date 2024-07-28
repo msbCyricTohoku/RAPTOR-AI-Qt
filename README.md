@@ -1,7 +1,7 @@
 * RAPTOR-AI Qt version -- Draw/Track/Model
 * Developed by: Mehrdad S. Beni and Hiroshi Watabe, 2024
 
-RAPTOR-AI model Qt version that takes user input images marked with "x" (note must be drawn) locations on the uploaded image. The program is coupled with a custom-trained AI model that automatically detects and track these drawn locations. Based on these locations, the program then generates anthropomorphic phantom with that respective drawn and tracked locations. 
+RAPTOR-AI model Qt version that takes user input images marked locations on the uploaded image. The program is coupled with a custom-trained AI model that automatically detects and track these drawn locations. Based on these locations, the program then generates anthropomorphic phantom with that respective drawn and tracked locations. In addition, users have the ability to model shielding mateirlas. 
 
 The model was developed on and for GNU/Linux operating systems ONLY. 
 
