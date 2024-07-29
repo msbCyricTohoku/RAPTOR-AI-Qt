@@ -22,4 +22,4 @@ Note: for the Qt version, we have noticed it will work with Wayland rather than 
 Should you encounter any bugs or issues, please do not hesitate to contact me via email.
 
 enjoy!
-20240725
+20240729
