@@ -264,7 +264,7 @@ class InferenceApp(QMainWindow):
 
             #inferred image path from the latest results directory
             inferred_image_path = latest_dir / Path(self.input_image_path).name
-            print(f"Inferred image path: {inferred_image_path}")
+            #print(f"Inferred image path: {inferred_image_path}")
             if inferred_image_path.exists():
                 self.display_image(inferred_image_path, self.inferred_image_label)
                 #display the dimensions under the inferred image
@@ -299,7 +299,7 @@ class InferenceApp(QMainWindow):
             pixmap = QPixmap.fromImage(qimage)
             label.setPixmap(pixmap)
             label.setFixedSize(new_width, new_height)
-            print(f"Displayed image: {image_path}")
+            #print(f"Displayed image: {image_path}")
         except Exception as e:
             print(f"Failed to display image: {e}")
             QMessageBox.critical(self, "Image Display Error", f"Failed to display image: {e}")
