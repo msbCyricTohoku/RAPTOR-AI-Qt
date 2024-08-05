@@ -29,6 +29,16 @@ import os
 import csv
 from pathlib import Path
 from codegen import phantom  ##this calls the human phantom generator module
+import configparser
+
+
+ #create a ConfigParser object
+config = configparser.ConfigParser()
+
+#read the parameters from the config file
+config.read('model_loader.ini')
+modelname = config['ModelParameter']['modelname'] #model name to load
+modelconfidence = config['ModelParameter']['modelconfidence'] #model confidence level
 
 class InferenceApp(QMainWindow):
     def __init__(self):
@@ -167,10 +177,10 @@ class InferenceApp(QMainWindow):
 
             #change --conf value if you wish to tweak the confidence for detected marks
             subprocess.run([
-                'python3', f'{yolov5_path}/detect.py',
+                'python', f'{yolov5_path}/detect.py',
                 '--weights', weights_path,
                 '--img', '640',
-                '--conf', '0.7',
+                '--conf', f'{modelconfidence}',
                 '--source', source_dir,
                 '--project', output_dir,
                 '--name', 'results',
