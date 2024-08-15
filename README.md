@@ -20,7 +20,7 @@ How to:
 8. pip install pyqt6-qt6==6.4.2
 9. pip install PySide6   -- in case you need to use it only
 
-Note: for the Qt version, we have noticed it will work better with Wayland rather than xorg. Please switch if needed. 
+Note: for the Qt version, we have noticed it will work better with wayland rather than xorg. Please switch if needed. 
 
 Should you encounter any bugs or issues, please do not hesitate to contact me via email.
 
